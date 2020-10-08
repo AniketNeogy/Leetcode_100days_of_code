@@ -30,7 +30,7 @@ class ListNode {
 public class ReverseLinkedList {
 
 	public ListNode reverseList(ListNode head) {
-		if(head.next == null)
+		if(head == null || head.next == null)
 			return head;
 		
 		ListNode prev = null;
@@ -45,6 +45,26 @@ public class ReverseLinkedList {
 		return prev;
 
 	}
+	
+	
+	public ListNode reverseList1(ListNode head) {
+		if(head == null || head.next == null)
+			return head;
+		
+		ListNode prev = null;
+		
+		while(head != null) {
+			ListNode current = head;
+			head= head.next;
+			current.next = prev;
+			prev = current;
+		}
+		
+		return prev.next;
+
+	}
+	
+	
 	public static void main(String[] args) {
 		
 		ListNode  newNode5 = new ListNode(5,null);
@@ -55,6 +75,13 @@ public class ReverseLinkedList {
 		
 		ReverseLinkedList revLinkedList  = new ReverseLinkedList();
 		ListNode newHead = revLinkedList.reverseList(head);
+		
+		while (newHead != null) {
+			System.out.print(newHead.val);
+			if(newHead.next!=null) System.out.print("->");
+			newHead = newHead.next;
+
+		}
 		
 
 	}
