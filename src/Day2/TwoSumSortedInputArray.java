@@ -76,9 +76,13 @@ public class TwoSumSortedInputArray {
 		int array3[] = {-1,0};
 		
 		TwoSumSortedInputArray twoSumArrayIndexes = new TwoSumSortedInputArray();
-		int twoSumarray1[]= twoSumArrayIndexes.twoSum(array1, 9);
-		int twoSumarray2[]= twoSumArrayIndexes.twoSum(array2, 6);
-		int twoSumarray3[]=  twoSumArrayIndexes.twoSum(array3, -1);
+		int twoSumarray1[]= twoSumArrayIndexes.twoSum(array1, 10);
+		//int twoSumarray2[]= twoSumArrayIndexes.twoSum(array2, 6);
+		//int twoSumarray3[]=  twoSumArrayIndexes.twoSum(array3, -1);
+		
+		for (int i : twoSumarray1) {
+			System.out.print(i+" ");
+		}
 		
 		
 
