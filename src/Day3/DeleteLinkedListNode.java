@@ -25,11 +25,11 @@ Output: [1,2,4]
 Example 4:
 Input: head = [0,1], node = 0
 Output: [1]
-
+ 
 Example 5:
 Input: head = [-3,5,-99], node = -3
 Output: [5,-99]
- 
+
 
 Constraints:
 
