@@ -49,7 +49,8 @@ public class TwoLinkedListIntersection {
 
 	public static void main(String[] args) {
 		//Linked List 1
-		ListNode  anewNode3 = new ListNode(6,null);
+		ListNode  anewNode4 = new ListNode(9,null);
+		ListNode  anewNode3 = new ListNode(6,anewNode4);
 		ListNode  anewNode2 = new ListNode(4,anewNode3);
 		ListNode  head1 = new ListNode(2,anewNode2);
 
