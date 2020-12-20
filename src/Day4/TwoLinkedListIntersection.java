@@ -49,19 +49,14 @@ public class TwoLinkedListIntersection {
 
 	public static void main(String[] args) {
 		//Linked List 1
-		ListNode  anewNode6 = new ListNode(5, null);
-		ListNode  anewNode5 = new ListNode(4, anewNode6);
-		ListNode  anewNode4 = new ListNode(8, anewNode5);
-		ListNode  anewNode3 = new ListNode(1,anewNode4);
-		ListNode  anewNode2 = new ListNode(6,anewNode3);
-		ListNode  head1 = new ListNode(5,anewNode2);
+		ListNode  anewNode4 = new ListNode(9,null);
+		ListNode  anewNode3 = new ListNode(6,anewNode4);
+		ListNode  anewNode2 = new ListNode(4,anewNode3);
+		ListNode  head1 = new ListNode(2,anewNode2);
 
 		//Linked List 2
-		ListNode  bnewNode5 = anewNode6;
-		ListNode  bnewNode4 = anewNode5;
-		ListNode  bnewNode3 = anewNode4;
-		ListNode  bnewNode2 = new ListNode(1,bnewNode3);
-		ListNode  head2 = new ListNode(4,bnewNode2);
+		ListNode  bnewNode2 = new ListNode(5,null);
+		ListNode  head2 = new ListNode(1,bnewNode2);
 
 		TwoLinkedListIntersection intersect  = new TwoLinkedListIntersection();
 		ListNode intersectedNode = intersect.getIntersectionNode(head1,head2);

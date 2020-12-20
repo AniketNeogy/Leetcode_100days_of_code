@@ -39,9 +39,13 @@ S and T only contain lowercase letters and '#' characters.
 
 package Day6;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class BackspaceStringCompare {
+	
+	List<Integer> ls = new ArrayList<Integer>();
 
 	//most Optimal Solution
 	public boolean backspaceCompare(String S, String T) {
